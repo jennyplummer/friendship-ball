@@ -1,0 +1,50 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 28px;
+    margin: auto;
+    height: auto;
+    text-align: center;
+    
+}
+
+h2 {
+    font-size: 18px;
+}
+
+header {
+    background-color: #00009c;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    font-weight: bold;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    padding: 3em;
+}
+
+.player {
+    background-color: #ffde59;
+    width: 40%;
+    height: auto;
+}
