@@ -33,7 +33,7 @@ document.querySelector("#search1").addEventListener("click", function (e) {
     const name = document.querySelector(`#playerName${boxNumber}`).value;
     const playerName = name;
     const playerBox = document.querySelector(`#playerBox${boxNumber}`);
-    let player; // Define the player variable in a broader scope
+    let player; 
   
     fetch(`https://www.balldontlie.io/api/v1/players?search=${playerName}`)
       .then((response) => {
@@ -44,11 +44,10 @@ document.querySelector("#search1").addEventListener("click", function (e) {
       })
       .then((data) => {
         if (data.data.length > 0) {
-          player = data.data[0]; // Assign the player data to the variable
+          player = data.data[0]; 
           const playerId = player.id;
   
-          // Fetch player's stats using the player's ID
-          return fetch(`https://www.balldontlie.io/api/v1/season_averages?player_ids[]=${playerId}`);
+          return fetch(`https://www.balldontlie.io/api/v1/stats?player_ids[]=${playerId}`);
         } else {
           throw new Error("Player not found");
         }
@@ -62,7 +61,6 @@ document.querySelector("#search1").addEventListener("click", function (e) {
       .then((statsData) => {
         const stats = statsData.data;
   
-        // Display the stats in the playerBox element
         playerBox.innerHTML = `
           <div>
             <h2>${player.first_name} ${player.last_name}</h2>
