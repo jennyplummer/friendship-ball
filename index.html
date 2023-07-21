@@ -7,19 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friendship Ball</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-
 </head>
 
 <body>
-    <header>
+    <aside>
         <img src="images/logo.png" alt="Friendship Ball Logo">
-    </header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Friendship Baller Index</a></li>
+            <li><a href="#">Bae-Bae Unit Converter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </aside>
     <main>
         <section class="explainer">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec odio purus, mollis at ex vitae, cursus
-            feugiat justo. Aenean lacinia in tortor sit amet sollicitudin. Cras et mauris sed augue commodo tincidunt.
-            Nulla facilisi. In vitae nisl sit amet nisl rhoncus lobortis. Ut eu nunc pretium, ullamcorper leo venenatis,
-            lacinia dolor.
+            <h2>Friendship Baller Rating?</h2>
+            <p>The Friendship Baller Rating (FBR) is a simple calculation of how "friendly" an NBA player's personal play style is - does the player share the ball? The higher the FBR rating, the more likely a player is to be a team-player rather than a ball hog.</p>
+            <h2>What can skew the stats?</h2>
+            <ul>
+                <li>Low average minutes played</li>
+                <li>Being a stat chaser (like Russell Westbrook)</li>
+                <li>Being a star shooter</li>
+            </ul>
         </section>
         <section class="player">
             <div class="searchBox">
@@ -27,23 +36,11 @@
                 <button id="search1">🔍</button>
             </div>
             <div class="playerBox" id="playerBox1"></div>
-
+            <div class="error" id="errorMessage" style="display: none;"></div>
             
         </section>
-        <section class="player">
-
-            <div class="searchBox">
-                <input type="text" id="playerName2" placeholder="Player Name">
-                <button id="search2">🔍</button>
-            </div>
-            <div class="playerBox" id="playerBox2"></div>
-        <div class="error" id="errorMessage" style="display: none;"></div>
-           
-        </section>
+    
     </main>
-    <footer>
-        <h1>Friendship Ball</h1>
-    </footer>
     <script src="js/script.js"></script>
 </body>
 
