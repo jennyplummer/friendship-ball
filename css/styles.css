@@ -18,8 +18,7 @@ body {
 
 aside {
     width: 20%;
-    margin: auto;
-    
+    margin: auto; 
     min-height: 100%;
     overflow: hidden;
 }
@@ -28,18 +27,69 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center; /* Change align-items to center */
+    align-items: center;
     padding: 1em;
     width: 80%;
     background-color: #2a9d8f;
     min-height: 100%;
 }
 
+
 .explainer {
     padding: 0 1em;
     color: black;
+    max-width: 65%;
 }
 
+.converter {
+    height: 200px;
+    width: 550px;
+    background-color: #94d2bd;
+    margin: 0 auto;
+    border: 5px solid #001219;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50px 1fr;
+}
+
+#input {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: center;
+    align-self: center;
+}
+
+#bbu {
+    height: 25px;
+    width: 125px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+#pound {
+    height: 25px;
+    width: 125px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+#output {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: center;
+}
 
 a {
     color: white;
@@ -100,4 +150,59 @@ img {
     height: 36px;
     padding: 4px 16px;
     background-color: white;
+}
+
+.datagrid table { 
+    border-collapse: collapse; 
+    text-align: left; 
+    width: 100%; 
+} 
+
+.datagrid {
+    font: normal 12px/150% Arial, Helvetica, sans-serif; 
+    background: #fff; 
+    overflow: hidden; 
+    border: 1px solid #001219; 
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+}
+
+.datagrid table td, .datagrid table th { 
+    padding: 3px 10px; 
+}
+
+.datagrid table thead th {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #001219), color-stop(1, #005F73) );
+    background:-moz-linear-gradient( center top, #001219 5%, #005F73 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#001219', endColorstr='#005F73');
+    background-color:#001219; 
+    color:#FFFFFF; 
+    font-size: 15px; 
+    font-weight: bold; 
+    border-left: 1px solid #005F73; 
+} 
+
+.datagrid table thead th:first-child { 
+    border: none; 
+}
+
+.datagrid table tbody td { 
+    color: #00496B; 
+    border-left: 1px solid #E1EEF4;
+    font-size: 12px;
+    font-weight: normal; 
+}
+
+.datagrid table tbody .alt td { 
+    background: #E1EEF4; 
+    color: #00496B; 
+}
+
+.datagrid table tbody td:first-child {
+    border-left: none; 
+}
+
+.datagrid table tbody tr:last-child td { 
+    border-bottom: none;
 }

@@ -105,3 +105,15 @@ fetch(`https://www.balldontlie.io/api/v1/players?search=${playerName}`)
 
 e.preventDefault();
 }
+
+let bbubtn = document.getElementById('bbu');
+let poundbtn = document.getElementById('pound');
+
+bbubtn.addEventListener('click', function(){
+  let input = document.getElementById('input').value;
+  console.log(input);
+})
+
+poundbtn.addEventListener('click', function(){
+
+})

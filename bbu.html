@@ -8,8 +8,31 @@
 </head>
 <body>
     <aside>
-    <h2>Top 25 Players, 2022-2023 Season</h2>
-    <table id="data-table">
+        <img src="images/logo.png" alt="Friendship Ball Logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Friendship Baller Index</a></li>
+            <li><a href="bbu.html">Bae-Bae Unit Converter</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </aside>
+    <main>
+        <section class="explainer">
+                <h2>BaeBae Unit Converter</h2>
+                <img src="images/baeBae.png" alt="A chonky calico cat sits in repose with a wavy rainbow background">
+                <p>How much does a player weigh in BaeBae Units? Use this converter to find out. You can also use it to convert your own weight, or the weight of something else you love.</p>
+        </section>
+        <section class="converter">
+            <input type="text" id="input">
+                <button id="bbu">Convert to BBU</button>
+                <button id="pound">Convert to lbs</button>
+            <input type="text" id="output">
+        </section>
+        <section class="player">
+            <h2>Top 25 Players, 2022-2023 Season</h2>
+    
+    <div class="datagrid">       
+        <table id="data-table">
         <thead>
             <tr>
                 <th>Name</th>
@@ -20,12 +43,12 @@
             <!-- Array data will be inserted here -->
         </tbody>
     </table>
-    </aside>
-    <main>
-        <h2>BaeBae Unit Converter</h2>
-        <img src="images/baeBae.png" alt="A chonky calico cat sits in repose with a wavy rainbow background">
-        <p>How much does a player weigh in BaeBae Units? Use this converter to find out. You can also use it to convert your own weight, or the weight of something else you love.</p>
+    </div>
+</section>
+          
     </main>
     <script type="module" src="js/app.js"></script>
+    <script src="js/convert.js"></script>
+
 </body>
 </html>
