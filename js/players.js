@@ -1,4 +1,4 @@
-const players = [
+const playerArray = [
     {"name": "Joel Embiid", "weight": 280},
     {"name": "Luka Doncic", "weight": 230},
     {"name": "Damian Lillard", "weight": 195},
@@ -25,3 +25,5 @@ const players = [
     {"name": "DeMar DeRozan", "weight": 220},
     {"name": "Nikola Jokic", "weight": 284}
 ]
+
+export default playerArray;
