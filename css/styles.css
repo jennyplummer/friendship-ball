@@ -6,42 +6,49 @@ html, body {
 }
 
 body {
-    display: flex;
+    /*display: flex;
     flex-flow: column wrap;
-    justify-content: space-between;
-    margin: auto;
+    margin: auto;*/
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 400;
     background-color: #2a9d8f;
     
 }
 
+
 aside {
-    width: 20%;
+    
     margin: auto; 
     min-height: 100%;
     overflow: hidden;
+    display: none;
 }
 
-main {
+/*main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 1em;
-    width: 80%;
+    align-content: space-between;
+    padding: 2em;
+    width: 100%;
     background-color: #2a9d8f;
     min-height: 100%;
 }
-
+*/
 
 .explainer {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
     padding: 0 1em;
     color: black;
     max-width: 65%;
 }
 
 .converter {
+    align-self: center;
     height: 200px;
     width: 550px;
     background-color: #94d2bd;
@@ -50,6 +57,14 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 50px 1fr;
+}
+
+.playerTable {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 auto;
+    align-self: center;
 }
 
 #input {
@@ -115,8 +130,9 @@ h2 {
 
 img {
     width: 200px;
-    
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 
 
@@ -152,6 +168,7 @@ img {
     background-color: white;
 }
 
+
 .datagrid table { 
     border-collapse: collapse; 
     text-align: left; 
@@ -166,6 +183,7 @@ img {
     -webkit-border-radius: 3px; 
     -moz-border-radius: 3px; 
     border-radius: 3px; 
+    width: 50%;
 }
 
 .datagrid table td, .datagrid table th { 
@@ -206,3 +224,131 @@ img {
 .datagrid table tbody tr:last-child td { 
     border-bottom: none;
 }
+
+@media only screen and (min-width: 770px) {
+    body {
+        display: flex;
+        flex-flow: column wrap;
+    
+    }
+    
+    aside {
+        display: block;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: space-between;
+        padding: 2em;
+        width: 80%;
+        background-color: #2a9d8f;
+        min-height: 100%;
+    }
+
+    header {
+   
+    display: none;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+   /* body {
+        font-family: 'Poppins', Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        background-color: #2a9d8f;
+        
+    }
+    */
+    header {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+    }
+
+    aside {
+        display: none;
+    }
+
+    main {
+        width: 100%;
+        padding: 0;
+        margin: auto;
+        max-height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background-color: #2a9d8f;
+    }
+
+    main > * {
+        width: 100%;
+    }
+
+    header {
+        display: flex;
+    }
+
+    header > ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+    }
+
+    .converter {
+        align-self: center;
+        height: 200px;
+        width: 75%;
+        background-color: #94d2bd;
+        margin: 0 auto;
+        border: 5px solid #001219;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 50px 1fr;
+    }
+
+#input {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    justify-self: center;
+    align-self: center;
+}
+
+#bbu {
+    height: 25px;
+    width: 125px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+#pound {
+    height: 25px;
+    width: 125px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    justify-self: center;
+}
+
+#output {
+    height: 25px;
+    width: 250px;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    justify-self: center;
+}
+}
+
