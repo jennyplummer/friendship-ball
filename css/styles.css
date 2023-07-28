@@ -6,9 +6,7 @@ html, body {
 }
 
 body {
-    /*display: flex;
-    flex-flow: column wrap;
-    margin: auto;*/
+   
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-weight: 400;
     background-color: #2a9d8f;
@@ -24,18 +22,6 @@ aside {
     display: none;
 }
 
-/*main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: space-between;
-    padding: 2em;
-    width: 100%;
-    background-color: #2a9d8f;
-    min-height: 100%;
-}
-*/
 
 .explainer {
     display: flex;
@@ -255,15 +241,6 @@ img {
 }
 
 @media only screen and (max-width: 769px) {
-   /* body {
-        font-family: 'Poppins', Arial, Helvetica, sans-serif;
-        font-weight: 400;
-        background-color: #2a9d8f;
-        
-    }
-    */
-    
-
     aside {
         display: none;
     }
