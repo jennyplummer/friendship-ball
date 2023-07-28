@@ -107,7 +107,7 @@ aside {
 }
 
 a {
-    color: white;
+    color: black;
     text-decoration: none;
 }
 
@@ -262,11 +262,7 @@ img {
         
     }
     */
-    header {
-        display: flex;
-        flex-flow: row nowrap;
-        align-content: center;
-    }
+    
 
     aside {
         display: none;
@@ -284,20 +280,25 @@ img {
         background-color: #2a9d8f;
     }
 
-    main > * {
-        width: 100%;
-    }
-
     header {
         display: flex;
+        
     }
 
     header > ul {
         list-style-type: none;
-        margin: 0;
+        margin: 2em;
         padding: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: space-between;
         overflow: hidden;
-        
+    }
+
+    header > img {
+        margin: 1em;
+        width: 15%;
+        height: 15%;
     }
 
     .converter {
