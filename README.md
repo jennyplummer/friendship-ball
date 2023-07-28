@@ -4,6 +4,8 @@ This is my project for the second part of Code Kentucky's Web Development course
 
 But that's not all - for the very curious, you can use the Bae Bae Unit Converter. This will allow you to take the weight of an NBA player - or anything that can be measured in pounds - and convert it into Bae Bae Units, or BBUs for short. Bae Bae is a chonky calico cat that shares my home, and the BBU lets you know how many Bae Baes it would take to match the weight of a GOAT like Lebron James - 22.72.
 
+With a bit more time, I'd like to clean up my CSS a lot - I was so worried about figuring out the JS parts that I didn't remember to design mobile first and for whatever reason, reverse engineering it made things a little muddled for me. For now I am happy that it seems to be displaying well enough on mobile and desktop, even though I know I have redundancies in the CSS code.
+
 ## Features
 
 - Use arrays, objects, sets or maps to store and retrieve information that is displayed in your app.
